@@ -1,5 +1,6 @@
 public class Calculator {
-    public int add(int a, int b) {
+
+    public int add(int a, int b){
         return a + b;
     }
     public int dif(int a, int b) {
@@ -11,11 +12,10 @@ public class Calculator {
         }
         return a / b;
     }
-    public int times(int a, int b) {
+    public int times(int a, int b){
         return a * b;
     }
     public int solver() {
-        int result = add(-20, div(times(dif(30, 10), 3), 5));
-        return result;
+        return dif(div(add(times(15, 2), 10), 5), 3);
     }
 }
